@@ -23,7 +23,7 @@ public class Loginpage extends Basepage {
 	}
 	
 	public void continuebtn () {
-		txtphonenumber.click();
+		btncontinue.click();
 	}
 	
 	
