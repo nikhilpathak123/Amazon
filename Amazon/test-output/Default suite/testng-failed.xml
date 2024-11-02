@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases.TC_001_LoginPage">
+      <class name="Testcases.TC_003_Crossbrowser">
         <methods>
-          <include name="setup"/>
-          <include name="verify_Login_Functionality"/>
+          <include name="launchbrowser"/>
+          <include name="verifyLogin"/>
         </methods>
-      </class> <!-- Testcases.TC_001_LoginPage -->
+      </class> <!-- Testcases.TC_003_Crossbrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

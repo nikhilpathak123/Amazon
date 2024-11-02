@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-27T00:03:04 IST" name="Default suite" finished-at="2024-10-27T00:03:19 IST" duration-ms="14224">
+  <suite started-at="2024-11-02T20:36:29 IST" name="Suite" finished-at="2024-11-02T20:37:07 IST" duration-ms="37736">
     <groups>
     </groups>
-    <test started-at="2024-10-27T00:03:04 IST" name="Default test" finished-at="2024-10-27T00:03:19 IST" duration-ms="14224">
-      <class name="Testcases.TC_002_Loginpage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_002_Loginpage@7a7471ce]" started-at="2024-10-27T00:03:05 IST" name="setup" finished-at="2024-10-27T00:03:11 IST" duration-ms="6745" status="PASS">
+    <test started-at="2024-11-02T20:36:29 IST" name="Testonchrome" finished-at="2024-11-02T20:36:59 IST" duration-ms="29731">
+      <class name="Testcases.TC_003_Crossbrowser">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Testcases.TC_003_Crossbrowser@5f2606b]" started-at="2024-11-02T20:36:29 IST" name="launchbrowser" finished-at="2024-11-02T20:36:47 IST" duration-ms="17679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Verify_Login_Functionality()[pri:0, instance:Testcases.TC_002_Loginpage@7a7471ce]" started-at="2024-10-27T00:03:11 IST" name="Verify_Login_Functionality" finished-at="2024-10-27T00:03:19 IST" duration-ms="7381" status="PASS">
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="verifyLogin()[pri:0, instance:Testcases.TC_003_Crossbrowser@5f2606b]" started-at="2024-11-02T20:36:47 IST" name="verifyLogin" finished-at="2024-11-02T20:36:58 IST" duration-ms="11931" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Login_Functionality -->
-      </class> <!-- Testcases.TC_002_Loginpage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verifyLogin -->
+      </class> <!-- Testcases.TC_003_Crossbrowser -->
+    </test> <!-- Testonchrome -->
+    <test started-at="2024-11-02T20:36:29 IST" name="Testonmsedge" finished-at="2024-11-02T20:37:07 IST" duration-ms="37736">
+      <class name="Testcases.TC_003_Crossbrowser">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Testcases.TC_003_Crossbrowser@1bdf8190]" started-at="2024-11-02T20:36:29 IST" name="launchbrowser" finished-at="2024-11-02T20:36:54 IST" duration-ms="24805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[msedge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="verifyLogin()[pri:0, instance:Testcases.TC_003_Crossbrowser@1bdf8190]" started-at="2024-11-02T20:36:54 IST" name="verifyLogin" finished-at="2024-11-02T20:37:06 IST" duration-ms="12833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+      </class> <!-- Testcases.TC_003_Crossbrowser -->
+    </test> <!-- Testonmsedge -->
+  </suite> <!-- Suite -->
 </testng-results>
