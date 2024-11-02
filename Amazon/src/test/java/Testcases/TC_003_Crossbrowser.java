@@ -67,8 +67,10 @@ public class TC_003_Crossbrowser extends Passwordpage {
 			lp.continuebtn();
 
 			Passwordpage pg = new Passwordpage(driver);
-			pg.passwordfiled("Personal@12345");
+			pg.passwordfiled("Password mat share kerna");
 			pg.signbtn();
+			
+			// convert testng XML to run test cases 
 		}
 
 	}
