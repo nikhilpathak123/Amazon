@@ -2,7 +2,14 @@ package TestBase;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+
+import java.io.File;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 
 public class BaseClass {
 	
@@ -15,6 +22,15 @@ public class BaseClass {
 		driver.manage().window().maximize();
 	}
 	
+	/*@AfterMethod
+	public void screenshoot() {
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File targetfile = new File(System.getProperty("user.dir") + "\\Screenshot folder\\fullpage.png");
+		source.renameTo(targetfile);
+		
+	}
+	*/
 
 	
 

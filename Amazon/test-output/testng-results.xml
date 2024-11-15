@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-02T20:36:29 IST" name="Suite" finished-at="2024-11-02T20:37:07 IST" duration-ms="37736">
+  <suite started-at="2024-11-15T23:34:48 IST" name="Suite" finished-at="2024-11-15T23:35:05 IST" duration-ms="17645">
     <groups>
     </groups>
-    <test started-at="2024-11-02T20:36:29 IST" name="Testonchrome" finished-at="2024-11-02T20:36:59 IST" duration-ms="29731">
+    <test started-at="2024-11-15T23:34:48 IST" name="Testonchrome" finished-at="2024-11-15T23:35:04 IST" duration-ms="16041">
       <class name="Testcases.TC_003_Crossbrowser">
-        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Testcases.TC_003_Crossbrowser@5f2606b]" started-at="2024-11-02T20:36:29 IST" name="launchbrowser" finished-at="2024-11-02T20:36:47 IST" duration-ms="17679" status="PASS">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Testcases.TC_003_Crossbrowser@5f2606b]" started-at="2024-11-15T23:34:48 IST" name="launchbrowser" finished-at="2024-11-15T23:34:50 IST" duration-ms="2801" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="verifyLogin()[pri:0, instance:Testcases.TC_003_Crossbrowser@5f2606b]" started-at="2024-11-02T20:36:47 IST" name="verifyLogin" finished-at="2024-11-02T20:36:58 IST" duration-ms="11931" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:Testcases.TC_003_Crossbrowser@5f2606b]" started-at="2024-11-15T23:34:50 IST" name="verifyLogin" finished-at="2024-11-15T23:35:04 IST" duration-ms="13155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
       </class> <!-- Testcases.TC_003_Crossbrowser -->
     </test> <!-- Testonchrome -->
-    <test started-at="2024-11-02T20:36:29 IST" name="Testonmsedge" finished-at="2024-11-02T20:37:07 IST" duration-ms="37736">
+    <test started-at="2024-11-15T23:34:48 IST" name="Testonmsedge" finished-at="2024-11-15T23:35:05 IST" duration-ms="17645">
       <class name="Testcases.TC_003_Crossbrowser">
-        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Testcases.TC_003_Crossbrowser@1bdf8190]" started-at="2024-11-02T20:36:29 IST" name="launchbrowser" finished-at="2024-11-02T20:36:54 IST" duration-ms="24805" status="PASS">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Testcases.TC_003_Crossbrowser@1bdf8190]" started-at="2024-11-15T23:34:48 IST" name="launchbrowser" finished-at="2024-11-15T23:34:52 IST" duration-ms="4781" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="verifyLogin()[pri:0, instance:Testcases.TC_003_Crossbrowser@1bdf8190]" started-at="2024-11-02T20:36:54 IST" name="verifyLogin" finished-at="2024-11-02T20:37:06 IST" duration-ms="12833" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:Testcases.TC_003_Crossbrowser@1bdf8190]" started-at="2024-11-15T23:34:52 IST" name="verifyLogin" finished-at="2024-11-15T23:35:05 IST" duration-ms="12781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->

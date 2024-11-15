@@ -7,6 +7,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import java.io.File;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import POM.Loginpage;
 import POM.Passwordpage;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -57,7 +63,7 @@ public class TC_003_Crossbrowser extends Passwordpage {
 			driver.manage().window().maximize();
 
 			Loginpage lp = new Loginpage(driver);
-			lp.phonenumber("Password mat share kerna");
+			lp.phonenumber("Do not share phonenumber");
 			try {
 				Thread.sleep(5000);
 			} catch (InterruptedException e) {
@@ -67,11 +73,22 @@ public class TC_003_Crossbrowser extends Passwordpage {
 			lp.continuebtn();
 
 			Passwordpage pg = new Passwordpage(driver);
-			pg.passwordfiled("Password mat share kerna");
+			pg.passwordfiled("do not share password");
 			pg.signbtn();
 			
+			
+			
+			
+			
+			//concert webdriver object into screenshot takesscreenshot interface
+			TakesScreenshot ts = (TakesScreenshot)driver;
+			File source = ts.getScreenshotAs(OutputType.FILE);
+			File targetfile = new File(System.getProperty("user.dir") + "\\Screenshot folder\\fullpage.png");
+			
+			source.renameTo(targetfile);
 			// convert testng XML to run test cases 
 		}
+		
 
 	}
 
