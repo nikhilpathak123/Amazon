@@ -12,6 +12,8 @@ public class TC_001_LoginPage extends BaseClass {
 		Loginpage lp = new Loginpage(driver);
 		lp.phonenumber("9654792993");
 		lp.continuebtn();
+		
+		//screenshoot();
 	}
 	
 	

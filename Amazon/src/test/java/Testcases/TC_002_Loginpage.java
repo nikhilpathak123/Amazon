@@ -21,7 +21,7 @@ public class TC_002_Loginpage extends BaseClass {
 		lp.continuebtn();
 		
 		Passwordpage pg = new Passwordpage(driver);
-		pg.passwordfiled("Apana password share mat kerna");
+		pg.passwordfiled("Amazon@12345");
 		pg.signbtn();
 		
 		

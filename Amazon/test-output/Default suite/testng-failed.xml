@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases.TC_003_Crossbrowser">
+      <class name="Testcases.TC_004_Addtocart">
         <methods>
-          <include name="launchbrowser"/>
-          <include name="verifyLogin"/>
+          <include name="setup"/>
+          <include name="Verify_Addtocart_Functionality"/>
         </methods>
-      </class> <!-- Testcases.TC_003_Crossbrowser -->
+      </class> <!-- Testcases.TC_004_Addtocart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

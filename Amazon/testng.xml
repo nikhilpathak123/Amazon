@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="3" parallel="tests" name="Suite">
 
+<listeners>
+<listener class-name="Utility.Listneer"/>
+
+</listeners>
 <test  name="Testonchrome">
    <parameter name="browser" value="chrome"></parameter>
     <classes>

@@ -1,6 +1,7 @@
 package Testcases;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,11 +11,14 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import POM.Loginpage;
 import POM.Passwordpage;
+import TestBase.BaseClass;
+import Utility.Listneer;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TC_003_Crossbrowser extends Passwordpage {
@@ -53,17 +57,16 @@ public class TC_003_Crossbrowser extends Passwordpage {
 			break;
 		}
 	}
+	
+	BaseClass sc = new BaseClass();
+	//sc.setup();
 
-		
-		
 		//Test Method to verify login
 		@Test
 		public void verifyLogin () {
-			driver.get("https://www.amazon.in/-/hi/ap/signin?openid.pape.max_auth_age=3600&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fspr%2Freturns%2Fgift&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_psr_desktop_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0");
-			driver.manage().window().maximize();
-
+			
 			Loginpage lp = new Loginpage(driver);
-			lp.phonenumber("Do not share phonenumber");
+			lp.phonenumber("do not share");
 			try {
 				Thread.sleep(5000);
 			} catch (InterruptedException e) {
@@ -73,20 +76,25 @@ public class TC_003_Crossbrowser extends Passwordpage {
 			lp.continuebtn();
 
 			Passwordpage pg = new Passwordpage(driver);
-			pg.passwordfiled("do not share password");
-			pg.signbtn();
+			pg.passwordfiled("do not share");
+			pg.signbtn();		
 			
+			Listneer ts = new Listneer();
+			//ts.onTestSuccess;
 			
-			
-			
-			
-			//concert webdriver object into screenshot takesscreenshot interface
-			TakesScreenshot ts = (TakesScreenshot)driver;
+			//1) Take full page, convert webdriver object into screenshot takesscreenshot interface
+			/*TakesScreenshot ts = (TakesScreenshot)driver;
 			File source = ts.getScreenshotAs(OutputType.FILE);
 			File targetfile = new File(System.getProperty("user.dir") + "\\Screenshot folder\\fullpage.png");
-			
 			source.renameTo(targetfile);
-			// convert testng XML to run test cases 
+			*/
+//			//2) Takescreenshot of specific elemet of webpage
+//			WebElement ts = driver.findElement(By.cssSelector("div[id='anonCarousel1'] ol[class='a-carousel']"));
+//			File source = ts.getScreenshotAs(OutputType.FILE);
+//			File targetfile = new File(System.getProperty("user.dir") + "\\Screenshot folder\\specficpage.png");
+//			source.renameTo(targetfile);
+//			
+//			// convert testng XML to run test cases 
 		}
 		
 

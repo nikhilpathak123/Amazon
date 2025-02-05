@@ -22,15 +22,17 @@ public class BaseClass {
 		driver.manage().window().maximize();
 	}
 	
-	/*@AfterMethod
-	public void screenshoot() {
+	//@AfterMethod
+	/*public void screenshoot() {
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		File targetfile = new File(System.getProperty("user.dir") + "\\Screenshot folder\\fullpage.png");
+		File targetfile = new File(System.getProperty("user.dir") + "\\Screenshot folder\\18nov.png");
 		source.renameTo(targetfile);
-		
-	}
-	*/
+		System.out.println("ScreenShot captured");
+	}*/
+
+	
+	
 
 	
 

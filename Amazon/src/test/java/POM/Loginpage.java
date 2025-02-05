@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 public class Loginpage extends Basepage {
 	
 	public Loginpage(WebDriver driver) {
+		//PageFactory
 		super(driver);
 	}
 	
