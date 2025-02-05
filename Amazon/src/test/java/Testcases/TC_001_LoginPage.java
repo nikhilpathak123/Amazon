@@ -10,7 +10,7 @@ public class TC_001_LoginPage extends BaseClass {
 	@Test
 	public void verify_Login_Functionality() {
 		Loginpage lp = new Loginpage(driver);
-		lp.phonenumber("9654792993");
+		lp.phonenumber("do not share");
 		lp.continuebtn();
 		
 		//screenshoot();

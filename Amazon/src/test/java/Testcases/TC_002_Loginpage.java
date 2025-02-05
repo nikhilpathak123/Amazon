@@ -11,7 +11,7 @@ public class TC_002_Loginpage extends BaseClass {
 	
 	public void Verify_Login_Functionality() {
 		Loginpage lp = new Loginpage(driver);
-		lp.phonenumber("9654792993");
+		lp.phonenumber("do not share ");
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -21,7 +21,7 @@ public class TC_002_Loginpage extends BaseClass {
 		lp.continuebtn();
 		
 		Passwordpage pg = new Passwordpage(driver);
-		pg.passwordfiled("Amazon@12345");
+		pg.passwordfiled("Do not share password");
 		pg.signbtn();
 		
 		
